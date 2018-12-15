@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="50726726-9903-4de2-bb06-b0a24bfe4b67" name="Default Changelist" comment="" />
+    <list default="true" id="50726726-9903-4de2-bb06-b0a24bfe4b67" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/test.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/figure.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/offw.csv" beforeDir="false" afterPath="$PROJECT_DIR$/offw.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -10,18 +18,27 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/test$test.coverage" NAME="test Coverage Results" MODIFIED="1544788025150" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/vor$test.coverage" NAME="test Coverage Results" MODIFIED="1544859876822" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" selection-start-line="19" selection-end-line="19" />
+            <state relative-caret-position="420">
+              <caret line="28" column="10" selection-start-line="28" selection-start-column="10" selection-end-line="28" selection-end-column="10" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
             </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/offw.csv">
+          <provider selected="true" editor-type-id="csv-text-editor" />
+          <provider editor-type-id="csv-table-editor">
+            <state showInfoPanel="true" rowLines="3" />
           </provider>
         </entry>
       </file>
@@ -34,238 +51,6 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/venv/lib/python3.7/site-packages/numpy/core/numeric.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="156">
-              <caret line="589" selection-start-line="589" selection-end-line="589" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file:///usr/local/Cellar/python/3.7.0/Frameworks/Python.framework/Versions/3.7/lib/python3.7/codecs.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="156">
-              <caret line="321" selection-start-line="321" selection-end-line="321" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/offw.csv">
-          <provider editor-type-id="csv-table-editor">
-            <state showInfoPanel="true" rowLines="3">
-              <column index="0" width="100" />
-              <column index="1" width="100" />
-              <column index="2" width="100" />
-              <column index="3" width="100" />
-              <column index="4" width="100" />
-              <column index="5" width="100" />
-              <column index="6" width="100" />
-              <column index="7" width="100" />
-              <column index="8" width="100" />
-              <column index="9" width="100" />
-              <column index="10" width="100" />
-              <column index="11" width="100" />
-              <column index="12" width="100" />
-              <column index="13" width="100" />
-              <column index="14" width="100" />
-              <column index="15" width="100" />
-              <column index="16" width="100" />
-              <column index="17" width="100" />
-              <column index="18" width="100" />
-              <column index="19" width="100" />
-              <column index="20" width="100" />
-              <column index="21" width="100" />
-              <column index="22" width="100" />
-              <column index="23" width="100" />
-              <column index="24" width="100" />
-              <column index="25" width="100" />
-              <column index="26" width="100" />
-              <column index="27" width="100" />
-              <column index="28" width="100" />
-              <column index="29" width="100" />
-              <column index="30" width="100" />
-              <column index="31" width="100" />
-              <column index="32" width="100" />
-              <column index="33" width="100" />
-              <column index="34" width="100" />
-              <column index="35" width="100" />
-              <column index="36" width="100" />
-              <column index="37" width="100" />
-              <column index="38" width="100" />
-              <column index="39" width="100" />
-              <column index="40" width="100" />
-              <column index="41" width="100" />
-              <column index="42" width="100" />
-              <column index="43" width="100" />
-              <column index="44" width="100" />
-              <column index="45" width="100" />
-              <column index="46" width="100" />
-              <column index="47" width="100" />
-              <column index="48" width="100" />
-              <column index="49" width="100" />
-              <column index="50" width="100" />
-              <column index="51" width="100" />
-              <column index="52" width="100" />
-              <column index="53" width="100" />
-              <column index="54" width="100" />
-              <column index="55" width="100" />
-              <column index="56" width="100" />
-              <column index="57" width="100" />
-              <column index="58" width="100" />
-              <column index="59" width="100" />
-              <column index="60" width="100" />
-              <column index="61" width="100" />
-              <column index="62" width="100" />
-              <column index="63" width="100" />
-              <column index="64" width="100" />
-              <column index="65" width="100" />
-              <column index="66" width="100" />
-              <column index="67" width="100" />
-              <column index="68" width="100" />
-              <column index="69" width="100" />
-              <column index="70" width="100" />
-              <column index="71" width="100" />
-              <column index="72" width="100" />
-              <column index="73" width="100" />
-              <column index="74" width="100" />
-              <column index="75" width="100" />
-              <column index="76" width="100" />
-              <column index="77" width="100" />
-              <column index="78" width="100" />
-              <column index="79" width="100" />
-              <column index="80" width="100" />
-              <column index="81" width="100" />
-              <column index="82" width="100" />
-              <column index="83" width="100" />
-              <column index="84" width="100" />
-              <column index="85" width="100" />
-              <column index="86" width="100" />
-              <column index="87" width="100" />
-              <column index="88" width="100" />
-              <column index="89" width="100" />
-              <column index="90" width="100" />
-              <column index="91" width="100" />
-              <column index="92" width="100" />
-              <column index="93" width="100" />
-              <column index="94" width="100" />
-              <column index="95" width="100" />
-              <column index="96" width="100" />
-              <column index="97" width="100" />
-              <column index="98" width="100" />
-              <column index="99" width="100" />
-              <column index="100" width="100" />
-              <column index="101" width="100" />
-              <column index="102" width="100" />
-              <column index="103" width="100" />
-              <column index="104" width="100" />
-              <column index="105" width="100" />
-              <column index="106" width="100" />
-              <column index="107" width="100" />
-              <column index="108" width="100" />
-              <column index="109" width="100" />
-              <column index="110" width="100" />
-              <column index="111" width="100" />
-              <column index="112" width="100" />
-              <column index="113" width="100" />
-              <column index="114" width="100" />
-              <column index="115" width="100" />
-              <column index="116" width="100" />
-              <column index="117" width="100" />
-              <column index="118" width="100" />
-              <column index="119" width="100" />
-              <column index="120" width="100" />
-              <column index="121" width="100" />
-              <column index="122" width="100" />
-              <column index="123" width="100" />
-              <column index="124" width="100" />
-              <column index="125" width="100" />
-              <column index="126" width="100" />
-              <column index="127" width="100" />
-              <column index="128" width="100" />
-              <column index="129" width="100" />
-              <column index="130" width="100" />
-              <column index="131" width="100" />
-              <column index="132" width="100" />
-              <column index="133" width="100" />
-              <column index="134" width="100" />
-              <column index="135" width="100" />
-              <column index="136" width="100" />
-              <column index="137" width="100" />
-              <column index="138" width="100" />
-              <column index="139" width="100" />
-              <column index="140" width="100" />
-              <column index="141" width="100" />
-              <column index="142" width="100" />
-              <column index="143" width="100" />
-              <column index="144" width="100" />
-              <column index="145" width="100" />
-              <column index="146" width="100" />
-              <column index="147" width="100" />
-              <column index="148" width="100" />
-              <column index="149" width="100" />
-              <column index="150" width="100" />
-              <column index="151" width="100" />
-              <column index="152" width="100" />
-              <column index="153" width="100" />
-              <column index="154" width="100" />
-              <column index="155" width="100" />
-              <column index="156" width="100" />
-              <column index="157" width="100" />
-              <column index="158" width="100" />
-              <column index="159" width="100" />
-              <column index="160" width="100" />
-              <column index="161" width="100" />
-              <column index="162" width="100" />
-              <column index="163" width="100" />
-              <column index="164" width="100" />
-              <column index="165" width="100" />
-              <column index="166" width="100" />
-              <column index="167" width="100" />
-              <column index="168" width="100" />
-              <column index="169" width="100" />
-              <column index="170" width="100" />
-              <column index="171" width="100" />
-              <column index="172" width="100" />
-              <column index="173" width="100" />
-              <column index="174" width="100" />
-              <column index="175" width="100" />
-              <column index="176" width="100" />
-              <column index="177" width="100" />
-              <column index="178" width="100" />
-              <column index="179" width="100" />
-              <column index="180" width="100" />
-              <column index="181" width="100" />
-              <column index="182" width="100" />
-              <column index="183" width="100" />
-              <column index="184" width="100" />
-              <column index="185" width="100" />
-              <column index="186" width="100" />
-              <column index="187" width="100" />
-              <column index="188" width="100" />
-              <column index="189" width="100" />
-              <column index="190" width="100" />
-              <column index="191" width="100" />
-              <column index="192" width="100" />
-              <column index="193" width="100" />
-              <column index="194" width="100" />
-              <column index="195" width="100" />
-              <column index="196" width="100" />
-              <column index="197" width="100" />
-              <column index="198" width="100" />
-              <column index="199" width="100" />
-              <column index="200" width="100" />
-            </state>
-          </provider>
-          <provider selected="true" editor-type-id="csv-text-editor">
-            <state relative-caret-position="315">
-              <caret line="21" column="14" lean-forward="true" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -274,6 +59,9 @@
         <option value="Python Script" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -294,22 +82,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
       <pane id="Scope">
         <subPane subId="Scope 'プロジェクト・ファイル'; set:プロジェクト・ファイル; class com.intellij.psi.search.scope.ProjectFilesScope">
           <expand>
@@ -326,12 +98,34 @@
           <select />
         </subPane>
       </pane>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="vor" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vor" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vor" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vor" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vor" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -409,13 +203,16 @@
       <workItem from="1544675719912" duration="357000" />
       <workItem from="1544677912399" duration="6607000" />
       <workItem from="1544778445221" duration="4809000" />
+      <workItem from="1544847155373" duration="4092000" />
+      <workItem from="1544852011417" duration="1481000" />
+      <workItem from="1544853922348" duration="6012000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11773000" />
+    <option name="totallyTimeSpent" value="23358000" />
   </component>
-  <component name="TodoView">
+  <component name="TodoView" selected-index="2">
     <todo-panel id="selected-file">
       <is-autoscroll-to-source value="true" />
     </todo-panel>
@@ -427,72 +224,35 @@
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49932885" visible="true" weight="0.16666667" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49932885" visible="true" weight="0.17310444" />
       <window_info id="Structure" order="1" sideWeight="0.50067115" side_tool="true" weight="0.2533137" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.28674698" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.4" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.28674698" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49928468" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32771084" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32891566" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5007153" side_tool="true" weight="0.4" />
       <window_info anchor="bottom" id="Terminal" order="11" weight="0.32771084" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.32771084" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="SciView" order="3" weight="0.3297568" />
+      <window_info active="true" anchor="right" id="SciView" order="3" visible="true" weight="0.3297568" />
       <window_info anchor="right" id="Database" order="4" />
       <window_info anchor="right" x="0" y="0" width="300" height="637" id="Documentation" order="5" side_tool="true" weight="0.3204578" />
     </layout>
-    <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49932885" visible="true" weight="0.16452074" />
-      <window_info id="Structure" order="1" sideWeight="0.50067115" side_tool="true" weight="0.2533137" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.29277107" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32771084" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.32771084" />
-      <window_info anchor="bottom" id="Python Console" order="12" weight="0.32771084" />
-      <window_info anchor="right" x="0" y="0" width="300" height="637" id="Documentation" order="0" side_tool="true" weight="0.3204578" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
-      <window_info anchor="right" id="SciView" order="4" weight="0.3297568" />
-      <window_info anchor="right" id="Database" order="5" />
-    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$APPLICATION_CONFIG_DIR$/pycharm.vmoptions">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" selection-start-line="20" selection-end-line="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/lib/python3.7/site-packages/scipy/spatial/_plotutils.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
-          <caret line="26" column="25" lean-forward="true" selection-start-line="26" selection-start-column="25" selection-end-line="26" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/pycharm.vmoptions" />
     <entry file="file://$PROJECT_DIR$/1.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="20265">
@@ -500,23 +260,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/figure.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file:///usr/local/Cellar/python/3.7.0/Frameworks/Python.framework/Versions/3.7/lib/python3.7/codecs.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="321" selection-start-line="321" selection-end-line="321" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/lib/python3.7/site-packages/numpy/core/numeric.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="589" selection-start-line="589" selection-end-line="589" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file:///usr/local/Cellar/python/3.7.0/Frameworks/Python.framework/Versions/3.7/lib/python3.7/codecs.py" />
     <entry file="file://$PROJECT_DIR$/offwb.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -526,218 +270,87 @@
     <entry file="file://$PROJECT_DIR$/offw.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/vor.csv">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/figure.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/lib/python3.7/site-packages/scipy/spatial/_plotutils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/pydevd.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="26010">
+          <caret line="1734" selection-start-line="1734" selection-end-line="1734" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/lib/python3.7/site-packages/numpy/core/numeric.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="8835">
+          <caret line="589" selection-start-line="589" selection-end-line="589" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/pyplot.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="157">
+          <caret line="688" selection-start-line="688" selection-end-line="688" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib/backend_bases.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="157">
+          <caret line="1947" selection-start-line="1947" selection-end-line="1947" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/fig_1.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/fig_3.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/fig_6.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/fig_12.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/fig_15.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/fig_18.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/fig_19.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/fig_20.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/fig_21.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/offw.csv">
+      <provider selected="true" editor-type-id="csv-text-editor" />
       <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" rowLines="3">
-          <column index="0" width="100" />
-          <column index="1" width="100" />
-          <column index="2" width="100" />
-          <column index="3" width="100" />
-          <column index="4" width="100" />
-          <column index="5" width="100" />
-          <column index="6" width="100" />
-          <column index="7" width="100" />
-          <column index="8" width="100" />
-          <column index="9" width="100" />
-          <column index="10" width="100" />
-          <column index="11" width="100" />
-          <column index="12" width="100" />
-          <column index="13" width="100" />
-          <column index="14" width="100" />
-          <column index="15" width="100" />
-          <column index="16" width="100" />
-          <column index="17" width="100" />
-          <column index="18" width="100" />
-          <column index="19" width="100" />
-          <column index="20" width="100" />
-          <column index="21" width="100" />
-          <column index="22" width="100" />
-          <column index="23" width="100" />
-          <column index="24" width="100" />
-          <column index="25" width="100" />
-          <column index="26" width="100" />
-          <column index="27" width="100" />
-          <column index="28" width="100" />
-          <column index="29" width="100" />
-          <column index="30" width="100" />
-          <column index="31" width="100" />
-          <column index="32" width="100" />
-          <column index="33" width="100" />
-          <column index="34" width="100" />
-          <column index="35" width="100" />
-          <column index="36" width="100" />
-          <column index="37" width="100" />
-          <column index="38" width="100" />
-          <column index="39" width="100" />
-          <column index="40" width="100" />
-          <column index="41" width="100" />
-          <column index="42" width="100" />
-          <column index="43" width="100" />
-          <column index="44" width="100" />
-          <column index="45" width="100" />
-          <column index="46" width="100" />
-          <column index="47" width="100" />
-          <column index="48" width="100" />
-          <column index="49" width="100" />
-          <column index="50" width="100" />
-          <column index="51" width="100" />
-          <column index="52" width="100" />
-          <column index="53" width="100" />
-          <column index="54" width="100" />
-          <column index="55" width="100" />
-          <column index="56" width="100" />
-          <column index="57" width="100" />
-          <column index="58" width="100" />
-          <column index="59" width="100" />
-          <column index="60" width="100" />
-          <column index="61" width="100" />
-          <column index="62" width="100" />
-          <column index="63" width="100" />
-          <column index="64" width="100" />
-          <column index="65" width="100" />
-          <column index="66" width="100" />
-          <column index="67" width="100" />
-          <column index="68" width="100" />
-          <column index="69" width="100" />
-          <column index="70" width="100" />
-          <column index="71" width="100" />
-          <column index="72" width="100" />
-          <column index="73" width="100" />
-          <column index="74" width="100" />
-          <column index="75" width="100" />
-          <column index="76" width="100" />
-          <column index="77" width="100" />
-          <column index="78" width="100" />
-          <column index="79" width="100" />
-          <column index="80" width="100" />
-          <column index="81" width="100" />
-          <column index="82" width="100" />
-          <column index="83" width="100" />
-          <column index="84" width="100" />
-          <column index="85" width="100" />
-          <column index="86" width="100" />
-          <column index="87" width="100" />
-          <column index="88" width="100" />
-          <column index="89" width="100" />
-          <column index="90" width="100" />
-          <column index="91" width="100" />
-          <column index="92" width="100" />
-          <column index="93" width="100" />
-          <column index="94" width="100" />
-          <column index="95" width="100" />
-          <column index="96" width="100" />
-          <column index="97" width="100" />
-          <column index="98" width="100" />
-          <column index="99" width="100" />
-          <column index="100" width="100" />
-          <column index="101" width="100" />
-          <column index="102" width="100" />
-          <column index="103" width="100" />
-          <column index="104" width="100" />
-          <column index="105" width="100" />
-          <column index="106" width="100" />
-          <column index="107" width="100" />
-          <column index="108" width="100" />
-          <column index="109" width="100" />
-          <column index="110" width="100" />
-          <column index="111" width="100" />
-          <column index="112" width="100" />
-          <column index="113" width="100" />
-          <column index="114" width="100" />
-          <column index="115" width="100" />
-          <column index="116" width="100" />
-          <column index="117" width="100" />
-          <column index="118" width="100" />
-          <column index="119" width="100" />
-          <column index="120" width="100" />
-          <column index="121" width="100" />
-          <column index="122" width="100" />
-          <column index="123" width="100" />
-          <column index="124" width="100" />
-          <column index="125" width="100" />
-          <column index="126" width="100" />
-          <column index="127" width="100" />
-          <column index="128" width="100" />
-          <column index="129" width="100" />
-          <column index="130" width="100" />
-          <column index="131" width="100" />
-          <column index="132" width="100" />
-          <column index="133" width="100" />
-          <column index="134" width="100" />
-          <column index="135" width="100" />
-          <column index="136" width="100" />
-          <column index="137" width="100" />
-          <column index="138" width="100" />
-          <column index="139" width="100" />
-          <column index="140" width="100" />
-          <column index="141" width="100" />
-          <column index="142" width="100" />
-          <column index="143" width="100" />
-          <column index="144" width="100" />
-          <column index="145" width="100" />
-          <column index="146" width="100" />
-          <column index="147" width="100" />
-          <column index="148" width="100" />
-          <column index="149" width="100" />
-          <column index="150" width="100" />
-          <column index="151" width="100" />
-          <column index="152" width="100" />
-          <column index="153" width="100" />
-          <column index="154" width="100" />
-          <column index="155" width="100" />
-          <column index="156" width="100" />
-          <column index="157" width="100" />
-          <column index="158" width="100" />
-          <column index="159" width="100" />
-          <column index="160" width="100" />
-          <column index="161" width="100" />
-          <column index="162" width="100" />
-          <column index="163" width="100" />
-          <column index="164" width="100" />
-          <column index="165" width="100" />
-          <column index="166" width="100" />
-          <column index="167" width="100" />
-          <column index="168" width="100" />
-          <column index="169" width="100" />
-          <column index="170" width="100" />
-          <column index="171" width="100" />
-          <column index="172" width="100" />
-          <column index="173" width="100" />
-          <column index="174" width="100" />
-          <column index="175" width="100" />
-          <column index="176" width="100" />
-          <column index="177" width="100" />
-          <column index="178" width="100" />
-          <column index="179" width="100" />
-          <column index="180" width="100" />
-          <column index="181" width="100" />
-          <column index="182" width="100" />
-          <column index="183" width="100" />
-          <column index="184" width="100" />
-          <column index="185" width="100" />
-          <column index="186" width="100" />
-          <column index="187" width="100" />
-          <column index="188" width="100" />
-          <column index="189" width="100" />
-          <column index="190" width="100" />
-          <column index="191" width="100" />
-          <column index="192" width="100" />
-          <column index="193" width="100" />
-          <column index="194" width="100" />
-          <column index="195" width="100" />
-          <column index="196" width="100" />
-          <column index="197" width="100" />
-          <column index="198" width="100" />
-          <column index="199" width="100" />
-          <column index="200" width="100" />
+        <state showInfoPanel="true" rowLines="3" />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state>
+          <caret lean-forward="true" />
         </state>
       </provider>
-      <provider editor-type-id="text-editor" />
-      <provider selected="true" editor-type-id="csv-text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="14" lean-forward="true" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="14" />
-        </state>
-      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/fig_17.png">
+      <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps/_pydev_execfile.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -746,10 +359,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/data/out.gif">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
+        <state relative-caret-position="420">
+          <caret line="28" column="10" selection-start-line="28" selection-start-column="10" selection-end-line="28" selection-end-column="10" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>
