@@ -19,11 +19,13 @@ for l in open('vor.csv').readlines():
         x.append([float(data[a]), float(data[b])])
     points = x
     vor = Voronoi(points)
+    plt.xlim(0,1000)
+    plt.ylim(0,40)
     plt.figure(figsize=(6, 4), facecolor='white')
     voronoi_plot_2d(vor)
 
-    plt.savefig('data/fig_{0}.png'.format(p))
-    images = [Image.open('data/fig_{0}.png'.format(p))]
+    #plt.savefig('data/fig_{0}.png'.format(p))
+    images.append(Image.open('data/fig_{0}.png'.format(p)))
     p += 1
-images[0].save('data/out.gif', save_all=True, append_images=images[1:], duration=1000, loop=0)
+images[0].save('data/out.gif', save_all=True, append_images=images[1:], duration=400, loop=0)
 plt.show()
