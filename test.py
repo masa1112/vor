@@ -1,4 +1,6 @@
 import pandas as pd
+import os
+import sys
 import matplotlib.pyplot as plt
 from scipy.spatial import Voronoi, voronoi_plot_2d, Delaunay,ConvexHull
 from collections import defaultdict
@@ -6,13 +8,18 @@ import itertools
 import math
 from PIL import Image
 import numpy as np
+import matplotlib.cm as cm
 
+path = "data/iwasaki/sheet3/"
 images = []
 histimage = []
+
+OP_F = []
 p = 1
-df = pd.read_csv('tanami/colloid/5V/5V447.csv',sep=',')
+df = pd.read_csv('csv/iwasaki/sheet3.csv',sep=',')
 lim = 0
-while p < 448:
+
+while p < 200:
 
     #これいじるのだるいからどうにかできる
     x = []
@@ -22,6 +29,7 @@ while p < 448:
         dfy = dft[['yy']]
         x.append([float(dfx.loc[i]), float(dfy.loc[i])])
     lim += int(len(dft.index))
+
     '''
 for l in open('vor.csv').readlines():
     #読み込んだのをdataに
@@ -38,6 +46,7 @@ for l in open('vor.csv').readlines():
     #points = x
     tri = Delaunay(x)
     neiList = defaultdict(set)
+    arr_x = np.array(x)
 
     #neiListにVNを格納(同じ者同士を同時に)
     for q in tri.vertices:
@@ -47,16 +56,15 @@ for l in open('vor.csv').readlines():
 
     print("fig %d " % (p))
 
-    phi_sin = 0
-    phi_cos = 0
-    #phi =[]
-    '''
+    phix = 0
+    phi = np.zeros((arr_x.shape[0], 2))
+    phi_hist = []
     for key in sorted(neiList.keys()):
         #ソートし終わった各点のボロノイネイバーを表示
         enu = 0 #VNの数
         sin6 = 0
         cos6 = 0
-        #print("%d:%s" % (key,','.join([str(h) for h in neiList[key]])))
+        ang = 0
 
         #ボンドオーダーパラメーター計算 angleの値域が違うかも
         for h in neiList[key]:
@@ -71,19 +79,19 @@ for l in open('vor.csv').readlines():
         sin6 /= enu
         cos6 /= enu
         phi_ang = np.arctan2(cos6,sin6)
-    phi_len = (1 / int(len(x))) * math.sqrt(((sin6 ** 2)+(cos6 ** 2)))
-    print("phi_6 = %f" % (phi_len))
-    '''
+        phi[key][0] = math.sqrt((sin6 ** 2)+(cos6 ** 2))
+        phi_hist.append(math.sqrt((sin6 ** 2)+(cos6 ** 2)))
+        phix += math.sqrt((sin6 ** 2)+(cos6 ** 2))
+    OP = 0
+    OP = phix / int(len(phi))
+    OP_F.append(OP)
+
+    print("phi_6 = %f" % (OP))
+
     vor = Voronoi(x)
 
-    #軸の値域
-    '''
-    plt.xlim(0,650) #なんかうまく設定されてない感ある(pltなんちゃらだから、axで行けばできると思う)
-    plt.ylim(0,500)
-    '''
-    #plt.figure(figsize=(6, 4),facecolor='white',)
+    fig1 = voronoi_plot_2d(vor, show_vertices=False, line_colors='blue',line_width=1, line_alpha=0.3, point_size=1)
 
-    fig1 = voronoi_plot_2d(vor, show_vertices=False, line_colors='orange',line_width=1, line_alpha=0.3, point_size=1)
     '''
     for region, c in zip([r for r in vor.regions if -1 not in r and r], ['yellow', 'pink']):
         ax.fill(vor.vertices[region][:, 0],
@@ -99,29 +107,66 @@ for l in open('vor.csv').readlines():
         ch = ConvexHull(vor.vertices[vor.regions[vor.point_region[u]]])
         #print('volume:', ch.volume)
         hist.append(ch.volume)
-    '''
-    local_area = np.zeros(x.shape[0])
+
+    ax1 = fig1.add_subplot(1, 1, 1)
+
+    local_area = np.zeros(arr_x.shape[0])
     for index, point in enumerate(x):
         local_area[index] = ConvexHull(np.vstack(
             (vor.vertices[[s for s in vor.regions[vor.point_region[index]] if s >= 0]], vor.points[index]))).area
-    '''
+
+    for index2, dat in enumerate(local_area):
+        ax1.plot(arr_x[index2][0], arr_x[index2][1], color=cm.Blues(phi[index2][0] / 1), marker='o', markersize=5)
+        #ax1.triplot(arr_x[:, 0], arr_x[:, 1], tri.simplices, color="b")
+
+
     #figにVoronoi diagramをsave
     ax1 = fig1.add_subplot(1, 1, 1)
-    ax1.set_title('Voronoi_{0}'.format(p))
-    fig1.savefig('tanami/colloid/5V/data/fig_{0}.png'.format(p))
-    images.append(Image.open('tanami/colloid/5V/data/fig_{0}.png'.format(p)))
+
+    ax1.set_title('Voronoi diagram_{0},BOP = %f'.format(p) % OP)
+    ax1 = plt.xlim(0,650)
+    ax1 = plt.ylim(0,500)
+    #plt.imshow(phi,cmap="Blues")
+    #plt.colorbar(fraction=0.046, pad=0.04)
+    fig1.savefig(path + 'fig/fig_{0}.png'.format(p))
+    images.append(Image.open(path + 'fig/fig_{0}.png'.format(p)))
+
+
+    #histgramのgif作る
 
     fig2 = plt.figure()
     ax2 = fig2.add_subplot(1, 1, 1)
     ax2.set_title('Volume_hist_{0}'.format(p))
-    edges = range(0, 200, 5)
+    edges = range(0, 1000, 5)
     ax2.hist(hist, bins=edges)
-    fig2.savefig('tanami/colloid/5V/hist/hist_{0}.png'.format(p))
-    histimage.append(Image.open('tanami/colloid/5V/hist/hist_{0}.png'.format(p)))
-    fig2.show()
+    ax2 = plt.xlabel("Volume")
+    ax2 = plt.ylabel("number")
+    ax2 = plt.ylim(0, 50)
+    fig2.savefig(path + 'hist/hist_{0}.png'.format(p))
+    histimage.append(Image.open(path + 'hist/hist_{0}.png'.format(p)))
+    #fig2.show()
+
+
+
     p += 1
 #作成した全部をimages[]に入れてgif化
-images[0].save('tanami/colloid/5V/data/out.gif', save_all=True, append_images=images[1:], duration=100, loop=0)
-histimage[0].save('tanami/colloid/5V/hist/histout.gif', save_all=True, append_images=histimage[1:], duration=100, loop=0)
+images[0].save(path + 'out.gif', save_all=True, append_images=images[1:], duration=100, loop=0)
+histimage[0].save(path + 'histout.gif', save_all=True, append_images=histimage[1:], duration=100, loop=0)
+fig3 = plt.figure()
+ax3 = fig3.add_subplot(1, 1, 1)
+ax3.set_title('bond order parameter')
+ax3.plot(OP_F)
+fig3.savefig(path + 'order_para.png')
+
+fig4 = plt.figure()
+ax4 = fig4.add_subplot(1, 1, 1)
+ax4.set_title('BOP_hist')
+#edges = range(0, 1, 0.1)
+ax4.hist(phi_hist, bins=100,range=(0,1))
+ax4 = plt.xlabel("BOP")
+ax4 = plt.ylabel("number")
+ax4 = plt.xlim(0,1)
+fig4.savefig(path + 'BOP_hist.png')
+#fig3.show()
 #plt.show()
 
